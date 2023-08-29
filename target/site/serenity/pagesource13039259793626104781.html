@@ -1,0 +1,1181 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en"&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;script type="text/javascript" async src="https://www.google-analytics.com/analytics.js"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-T61M16SLF5&amp;l=dataLayer&amp;cx=c"&gt;&lt;/script&gt;<br/>
+  &lt;script async src="https://www.googletagmanager.com/gtag/js?id=UA-93461466-1"&gt;&lt;/script&gt;<br/>
+  &lt;script&gt;function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date)&lt;/script&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br/>
+  &lt;meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width,viewport-fit=cover"&gt;<br/>
+  &lt;link rel="shortcut icon" href="./favicon.ico"&gt;<br/>
+  &lt;link id="theme-link" rel="stylesheet" href="./themes/saga-blue/theme.css"&gt;<br/>
+  &lt;title&gt;PrimeReact&lt;/title&gt;<br/>
+  &lt;link href="./static/css/2.4c5115b1.chunk.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="./static/css/main.479f3088.chunk.css" rel="stylesheet"&gt;<br/>
+  &lt;style type="text/css"&gt;/* Chart.js */<br/>
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}&lt;/style&gt;<br/>
+  &lt;meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body&gt;<br/>
+  &lt;div id="root"&gt;<br/>
+   &lt;div class="layout-wrapper layout-news-active"&gt;<br/>
+    &lt;div class="p-toast p-component p-toast-top-right"&gt;<br/>
+     &lt;div&gt;&lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="layout-news"&gt;<br/>
+     &lt;div class="layout-news-container"&gt;<br/>
+      &lt;img class="layouts-news-mockup-image" src="showcase/images/news/topbar-diamond-mockup.png" alt="layout"&gt;&lt;span class="layout-news-details"&gt;&lt;/span&gt;&lt;a href="https://www.primefaces.org/diamond-react" target="_blank" rel="noopener noreferrer" tabindex="-1" class="layout-news-button" style="text-decoration: none;"&gt;LEARN MORE&lt;i class="pi pi-angle-right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;button type="button" class="p-link layout-news-close"&gt;&lt;i class="pi pi-times"&gt;&lt;/i&gt;&lt;/button&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="layout-topbar"&gt;<br/>
+     &lt;button type="button" class="p-link menu-button" aria-haspopup="true" aria-label="Menu"&gt;&lt;i class="pi pi-bars"&gt;&lt;/i&gt;&lt;/button&gt;&lt;a class="logo" aria-label="PrimeReact logo" href="#/"&gt;&lt;img alt="logo" src="showcase/images/primereact-logo-dark.png"&gt;&lt;/a&gt;<br/>
+     &lt;div class="app-theme" data-pr-tooltip="saga-blue"&gt;<br/>
+      &lt;img alt="saga-blue" src="showcase/images/themes/saga-blue.png"&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;ul class="topbar-menu p-unselectable-text" role="menubar"&gt;<br/>
+      &lt;li role="none"&gt;&lt;a role="menuitem" class="topbar-root-link" aria-haspopup="false" href="#/setup"&gt;Get Started&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li role="none" class="topbar-submenu"&gt;&lt;button type="button" role="menuitem" aria-haspopup="true" aria-expanded="false" class="p-link"&gt;Themes&lt;/button&gt;&lt;/li&gt;<br/>
+      &lt;li role="none" class="topbar-submenu"&gt;&lt;button type="button" role="menuitem" aria-haspopup="true" aria-expanded="false" class="p-link"&gt;Templates&lt;/button&gt;&lt;/li&gt;<br/>
+      &lt;li role="none" class="topbar-submenu"&gt;&lt;button type="button" role="menuitem" aria-haspopup="true" aria-expanded="false" class="p-link"&gt;Resources&lt;/button&gt;&lt;/li&gt;<br/>
+      &lt;li role="none" class="topbar-submenu"&gt;&lt;button type="button" role="menuitem" aria-haspopup="true" aria-expanded="false" class="p-link"&gt;v5.0.2&lt;/button&gt;&lt;/li&gt;<br/>
+     &lt;/ul&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="layout-sidebar" role="navigation"&gt;<br/>
+     &lt;span class="layout-sidebar-filter p-input-icon-left p-fluid p-my-2"&gt;&lt;i class="pi pi-search"&gt;&lt;/i&gt;&lt;input type="text" placeholder="Search..." aria-label="Search input" autocomplete="off" class="p-inputtext p-component"&gt;&lt;/span&gt;<br/>
+     &lt;div class="layout-menu" role="menubar"&gt;<br/>
+      &lt;div class="menu-category"&gt;<br/>
+       General<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-items"&gt;<br/>
+       &lt;a role="menuitem" href="#/setup"&gt;Get Started&lt;/a&gt;&lt;a href="https://forum.primefaces.org/viewforum.php?f=57" role="menuitem" target="_blank" rel="noopener noreferrer"&gt;Community Forum&lt;/a&gt;&lt;a href="https://github.com/primefaces/primereact" role="menuitem" target="_blank" rel="noopener noreferrer"&gt;Source Code&lt;/a&gt;&lt;a role="menuitem" href="#/support"&gt;Support&lt;/a&gt;&lt;a href="https://www.primefaces.org/store/" role="menuitem" target="_blank" rel="noopener noreferrer"&gt;Store&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-category"&gt;<br/>
+       Theming<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-items"&gt;<br/>
+       &lt;a role="menuitem" href="#/theming"&gt;Guide&lt;/a&gt;&lt;a href="https://www.primefaces.org/designer/primereact" role="menuitem" target="_blank" rel="noopener noreferrer"&gt;Theme Designer&lt;/a&gt;&lt;a href="https://www.primefaces.org/designer-react" role="menuitem" target="_blank" rel="noopener noreferrer"&gt;Visual Editor&lt;/a&gt;&lt;a href="https://www.primefaces.org/designer/api/primereact/5.0.0" role="menuitem" target="_blank" rel="noopener noreferrer"&gt;SASS API&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-category"&gt;<br/>
+       PrimeFlex<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-items"&gt;<br/>
+       &lt;a role="menuitem" href="#/primeflex"&gt;Setup&lt;/a&gt;&lt;a role="menuitem" href="#/display"&gt;Display&lt;/a&gt;&lt;a role="menuitem" href="#/elevation"&gt;Elevation&lt;/a&gt;&lt;a role="menuitem" href="#/flexbox"&gt;Flexbox&lt;/a&gt;&lt;a role="menuitem" href="#/formlayout"&gt;FormLayout&lt;/a&gt;&lt;a role="menuitem" href="#/flexgrid"&gt;Grid System&lt;/a&gt;&lt;a role="menuitem" href="#/spacing"&gt;Spacing&lt;/a&gt;&lt;a role="menuitem" href="#/text"&gt;Text&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-category"&gt;<br/>
+       PrimeIcons<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-items"&gt;<br/>
+       &lt;a role="menuitem" href="#/icons"&gt;Icons v4.0&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-category"&gt;<br/>
+       Form<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-items"&gt;<br/>
+       &lt;a role="menuitem" href="#/autocomplete"&gt;AutoComplete&lt;/a&gt;&lt;a role="menuitem" href="#/calendar"&gt;Calendar&lt;/a&gt;&lt;a role="menuitem" href="#/checkbox"&gt;Checkbox&lt;/a&gt;&lt;a role="menuitem" href="#/chips"&gt;Chips&lt;/a&gt;&lt;a role="menuitem" href="#/colorpicker"&gt;ColorPicker&lt;/a&gt;&lt;a role="menuitem" href="#/dropdown"&gt;Dropdown&lt;/a&gt;&lt;a role="menuitem" href="#/editor"&gt;Editor&lt;/a&gt;&lt;a role="menuitem" href="#/inputgroup"&gt;InputGroup&lt;/a&gt;&lt;a role="menuitem" href="#/inputmask"&gt;InputMask&lt;/a&gt;&lt;a role="menuitem" href="#/inputnumber"&gt;InputNumber&lt;/a&gt;&lt;a role="menuitem" href="#/inputswitch"&gt;InputSwitch&lt;/a&gt;&lt;a role="menuitem" href="#/inputtext"&gt;InputText&lt;/a&gt;&lt;a role="menuitem" href="#/floatlabel"&gt;FloatLabel&lt;/a&gt;&lt;a role="menuitem" href="#/inputtextarea"&gt;InputTextarea&lt;/a&gt;&lt;a role="menuitem" href="#/keyfilter"&gt;KeyFilter&lt;/a&gt;&lt;a role="menuitem" href="#/listbox"&gt;Listbox&lt;/a&gt;&lt;a role="menuitem" href="#/multiselect"&gt;MultiSelect&lt;/a&gt;&lt;a role="menuitem" href="#/password"&gt;Password&lt;/a&gt;&lt;a role="menuitem" href="#/radiobutton"&gt;RadioButton&lt;/a&gt;&lt;a role="menuitem" href="#/rating"&gt;Rating&lt;/a&gt;&lt;a role="menuitem" href="#/selectbutton"&gt;SelectButton&lt;/a&gt;&lt;a role="menuitem" href="#/slider"&gt;Slider&lt;/a&gt;&lt;a role="menuitem" href="#/tristatecheckbox"&gt;TriStateCheckbox&lt;/a&gt;&lt;a role="menuitem" href="#/togglebutton"&gt;ToggleButton&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-category"&gt;<br/>
+       Button<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-items"&gt;<br/>
+       &lt;a role="menuitem" href="#/button"&gt;Button&lt;/a&gt;&lt;a role="menuitem" href="#/splitbutton"&gt;SplitButton&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-category"&gt;<br/>
+       Data<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-items"&gt;<br/>
+       &lt;button class="p-link"&gt;DataTable&lt;/button&gt;&lt;button class="p-link"&gt;DataView&lt;/button&gt;&lt;button class="p-link"&gt;DataScroller&lt;/button&gt;&lt;a role="menuitem" href="#/gmap"&gt;Google Maps&lt;/a&gt;&lt;a role="menuitem" href="#/fullcalendar"&gt;FullCalendar&lt;/a&gt;&lt;a role="menuitem" href="#/orderlist"&gt;OrderList&lt;/a&gt;&lt;a role="menuitem" href="#/organizationchart"&gt;Org Chart&lt;/a&gt;&lt;a role="menuitem" href="#/paginator"&gt;Paginator&lt;/a&gt;&lt;a role="menuitem" href="#/picklist"&gt;PickList&lt;/a&gt;&lt;button class="p-link"&gt;Tree&lt;/button&gt;&lt;button class="p-link"&gt;TreeTable&lt;/button&gt;&lt;a role="menuitem" href="#/timeline"&gt;Timeline&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-category"&gt;<br/>
+       Panel<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-items"&gt;<br/>
+       &lt;a role="menuitem" href="#/accordion"&gt;Accordion&lt;/a&gt;&lt;a role="menuitem" href="#/card"&gt;Card&lt;/a&gt;&lt;a role="menuitem" href="#/deferredcontent"&gt;Deferred&lt;/a&gt;&lt;a role="menuitem" href="#/fieldset"&gt;Fieldset&lt;/a&gt;&lt;a role="menuitem" href="#/panel"&gt;Panel&lt;/a&gt;&lt;a role="menuitem" href="#/scrollPanel"&gt;ScrollPanel&lt;/a&gt;&lt;a role="menuitem" href="#/tabview"&gt;TabView&lt;/a&gt;&lt;a role="menuitem" href="#/toolbar"&gt;Toolbar&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-category"&gt;<br/>
+       Overlay<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-items"&gt;<br/>
+       &lt;a role="menuitem" href="#/dialog"&gt;Dialog&lt;/a&gt;&lt;a role="menuitem" href="#/overlaypanel"&gt;OverlayPanel&lt;/a&gt;&lt;a role="menuitem" href="#/sidebar"&gt;Sidebar&lt;/a&gt;&lt;a role="menuitem" href="#/tooltip"&gt;Tooltip&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-category"&gt;<br/>
+       File<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-items"&gt;<br/>
+       &lt;a role="menuitem" href="#/fileupload"&gt;Upload&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-category"&gt;<br/>
+       Menu<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-items"&gt;<br/>
+       &lt;a role="menuitem" href="#/menumodel"&gt;MenuModel&lt;/a&gt;&lt;a role="menuitem" href="#/menu"&gt;Menu&lt;/a&gt;&lt;a role="menuitem" href="#/tabmenu"&gt;TabMenu&lt;/a&gt;&lt;a role="menuitem" href="#/breadcrumb"&gt;Breadcrumb&lt;/a&gt;&lt;a role="menuitem" href="#/tieredmenu"&gt;TieredMenu&lt;/a&gt;&lt;a role="menuitem" href="#/menubar"&gt;Menubar&lt;/a&gt;&lt;a role="menuitem" href="#/contextmenu"&gt;ContextMenu&lt;/a&gt;&lt;a role="menuitem" href="#/panelmenu"&gt;PanelMenu&lt;/a&gt;&lt;a role="menuitem" href="#/steps"&gt;Steps&lt;/a&gt;&lt;a role="menuitem" href="#/megamenu"&gt;MegaMenu&lt;/a&gt;&lt;a role="menuitem" href="#/slidemenu"&gt;SlideMenu&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-category"&gt;<br/>
+       Chart<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-items"&gt;<br/>
+       &lt;a role="menuitem" href="#/chartdemo"&gt;ChartModel&lt;/a&gt;&lt;a role="menuitem" href="#/piechart"&gt;Pie&lt;/a&gt;&lt;a role="menuitem" href="#/doughnutchart"&gt;Doughnut&lt;/a&gt;&lt;a role="menuitem" href="#/barchart"&gt;Bar&lt;/a&gt;&lt;a role="menuitem" href="#/linechart"&gt;Line&lt;/a&gt;&lt;a role="menuitem" href="#/polarareachart"&gt;PolarArea&lt;/a&gt;&lt;a role="menuitem" href="#/radarchart"&gt;Radar&lt;/a&gt;&lt;a role="menuitem" href="#/combochart"&gt;Combo&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-category"&gt;<br/>
+       Messages<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-items"&gt;<br/>
+       &lt;a role="menuitem" href="#/messages"&gt;Messages&lt;/a&gt;&lt;a role="menuitem" href="#/toast"&gt;Toast&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-category"&gt;<br/>
+       Media<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-items"&gt;<br/>
+       &lt;a role="menuitem" href="#/carousel"&gt;Carousel&lt;/a&gt;&lt;button class="p-link"&gt;Galleria&lt;/button&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-category"&gt;<br/>
+       Misc<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="menu-items"&gt;<br/>
+       &lt;a role="menuitem" href="#/accessibility"&gt;Accessibility&lt;/a&gt;&lt;a role="menuitem" href="#/badge"&gt;Badge&lt;/a&gt;&lt;a role="menuitem" href="#/inplace"&gt;Inplace&lt;/a&gt;&lt;a role="menuitem" href="#/progressbar"&gt;ProgressBar&lt;/a&gt;&lt;a role="menuitem" href="#/progressspinner"&gt;ProgressSpinner&lt;/a&gt;&lt;a role="menuitem" href="#/ripple"&gt;Ripple&lt;/a&gt;&lt;a role="menuitem" href="#/captcha"&gt;Captcha&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="layout-content"&gt;<br/>
+     &lt;div&gt;<br/>
+      &lt;div class="content-section introduction"&gt;<br/>
+       &lt;div class="feature-intro"&gt;<br/>
+        &lt;h1&gt;DataTable &lt;span&gt;Selection&lt;/span&gt;&lt;/h1&gt;<br/>
+        &lt;p&gt;DataTable provides single and multiple selection modes on click of a row. Selected rows are bound to the selection property and onRowSelect-onRowUnselect events are provided as optional callbacks. In addition built-in radio button and checkbox based selections are available as alternatives.&lt;/p&gt;&lt;button class="p-button p-component layout-changelog-button p-button-outlined p-mt-3"&gt;&lt;span class="pi pi-list p-c p-button-icon-left"&gt;&lt;/span&gt;&lt;span class="p-button-label p-c"&gt;VIEW CHANGELOG&lt;/span&gt;&lt;span class="p-ink"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="content-section implementation"&gt;<br/>
+       &lt;div class="p-toast p-component p-toast-top-right"&gt;<br/>
+        &lt;div&gt;&lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="card"&gt;<br/>
+        &lt;h5&gt;Single&lt;/h5&gt;<br/>
+        &lt;p&gt;In single mode, a row is selected on click event of a row. If the row is already selected then the row gets unselected.&lt;/p&gt;<br/>
+        &lt;div class="p-datatable p-component p-datatable-hoverable-rows" data-scrollselectors=".p-datatable-scrollable-body, .p-datatable-unfrozen-view .p-datatable-scrollable-body"&gt;<br/>
+         &lt;div class="p-datatable-wrapper"&gt;<br/>
+          &lt;table role="grid"&gt;<br/>
+           &lt;thead class="p-datatable-thead"&gt;<br/>
+            &lt;tr&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Code&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Name&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Category&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Quantity&lt;/span&gt;&lt;/th&gt;<br/>
+            &lt;/tr&gt;<br/>
+           &lt;/thead&gt;<br/>
+           &lt;tbody class="p-datatable-tbody"&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;f230fh0g3&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Bamboo Watch&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;24&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;nvklal433&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Black Watch&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;61&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;zz21cz3c1&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Blue Band&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Fitness&lt;/td&gt;<br/>
+             &lt;td class=""&gt;2&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;244wgerg2&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Blue T-Shirt&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Clothing&lt;/td&gt;<br/>
+             &lt;td class=""&gt;25&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;h456wer53&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Bracelet&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;73&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;av2231fwg&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Brown Purse&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;0&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;bib36pfvm&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Chakra Bracelet&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;5&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;mbvjkgip5&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Galaxy Earrings&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;23&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;vbb124btr&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Game Controller&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Electronics&lt;/td&gt;<br/>
+             &lt;td class=""&gt;2&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;cm230f032&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Gaming Set&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Electronics&lt;/td&gt;<br/>
+             &lt;td class=""&gt;63&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+           &lt;/tbody&gt;<br/>
+          &lt;/table&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="card"&gt;<br/>
+        &lt;h5&gt;Multiple&lt;/h5&gt;<br/>
+        &lt;p&gt;In multiple mode, selection binding should be an array. For touch enabled devices, selection is managed by tapping and for other devices metakey or shiftkey are required. Setting metaKeySelection property as false enables multiple selection without meta key.&lt;/p&gt;<br/>
+        &lt;div class="p-datatable p-component p-datatable-hoverable-rows" data-scrollselectors=".p-datatable-scrollable-body, .p-datatable-unfrozen-view .p-datatable-scrollable-body"&gt;<br/>
+         &lt;div class="p-datatable-header"&gt;<br/>
+          Multiple Selection with MetaKey<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-datatable-wrapper"&gt;<br/>
+          &lt;table role="grid"&gt;<br/>
+           &lt;thead class="p-datatable-thead"&gt;<br/>
+            &lt;tr&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Code&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Name&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Category&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Quantity&lt;/span&gt;&lt;/th&gt;<br/>
+            &lt;/tr&gt;<br/>
+           &lt;/thead&gt;<br/>
+           &lt;tbody class="p-datatable-tbody"&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;f230fh0g3&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Bamboo Watch&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;24&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;nvklal433&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Black Watch&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;61&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;zz21cz3c1&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Blue Band&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Fitness&lt;/td&gt;<br/>
+             &lt;td class=""&gt;2&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;244wgerg2&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Blue T-Shirt&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Clothing&lt;/td&gt;<br/>
+             &lt;td class=""&gt;25&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;h456wer53&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Bracelet&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;73&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;av2231fwg&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Brown Purse&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;0&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;bib36pfvm&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Chakra Bracelet&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;5&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;mbvjkgip5&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Galaxy Earrings&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;23&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;vbb124btr&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Game Controller&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Electronics&lt;/td&gt;<br/>
+             &lt;td class=""&gt;2&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;cm230f032&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Gaming Set&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Electronics&lt;/td&gt;<br/>
+             &lt;td class=""&gt;63&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+           &lt;/tbody&gt;<br/>
+          &lt;/table&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="p-datatable p-component p-datatable-hoverable-rows" data-scrollselectors=".p-datatable-scrollable-body, .p-datatable-unfrozen-view .p-datatable-scrollable-body" style="margin-top: 2em;"&gt;<br/>
+         &lt;div class="p-datatable-header"&gt;<br/>
+          Multiple Selection without MetaKey<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-datatable-wrapper"&gt;<br/>
+          &lt;table role="grid"&gt;<br/>
+           &lt;thead class="p-datatable-thead"&gt;<br/>
+            &lt;tr&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Code&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Name&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Category&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Quantity&lt;/span&gt;&lt;/th&gt;<br/>
+            &lt;/tr&gt;<br/>
+           &lt;/thead&gt;<br/>
+           &lt;tbody class="p-datatable-tbody"&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;f230fh0g3&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Bamboo Watch&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;24&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;nvklal433&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Black Watch&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;61&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;zz21cz3c1&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Blue Band&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Fitness&lt;/td&gt;<br/>
+             &lt;td class=""&gt;2&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;244wgerg2&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Blue T-Shirt&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Clothing&lt;/td&gt;<br/>
+             &lt;td class=""&gt;25&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;h456wer53&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Bracelet&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;73&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;av2231fwg&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Brown Purse&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;0&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;bib36pfvm&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Chakra Bracelet&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;5&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;mbvjkgip5&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Galaxy Earrings&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;23&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;vbb124btr&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Game Controller&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Electronics&lt;/td&gt;<br/>
+             &lt;td class=""&gt;2&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;cm230f032&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Gaming Set&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Electronics&lt;/td&gt;<br/>
+             &lt;td class=""&gt;63&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+           &lt;/tbody&gt;<br/>
+          &lt;/table&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="card"&gt;<br/>
+        &lt;h5&gt;Events&lt;/h5&gt;<br/>
+        &lt;p&gt;row-select and row-unselects are available as selection events.&lt;/p&gt;<br/>
+        &lt;div class="p-datatable p-component p-datatable-hoverable-rows" data-scrollselectors=".p-datatable-scrollable-body, .p-datatable-unfrozen-view .p-datatable-scrollable-body"&gt;<br/>
+         &lt;div class="p-datatable-wrapper"&gt;<br/>
+          &lt;table role="grid"&gt;<br/>
+           &lt;thead class="p-datatable-thead"&gt;<br/>
+            &lt;tr&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Code&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Name&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Category&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Quantity&lt;/span&gt;&lt;/th&gt;<br/>
+            &lt;/tr&gt;<br/>
+           &lt;/thead&gt;<br/>
+           &lt;tbody class="p-datatable-tbody"&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;f230fh0g3&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Bamboo Watch&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;24&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;nvklal433&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Black Watch&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;61&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;zz21cz3c1&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Blue Band&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Fitness&lt;/td&gt;<br/>
+             &lt;td class=""&gt;2&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;244wgerg2&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Blue T-Shirt&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Clothing&lt;/td&gt;<br/>
+             &lt;td class=""&gt;25&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;h456wer53&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Bracelet&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;73&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;av2231fwg&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Brown Purse&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;0&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;bib36pfvm&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Chakra Bracelet&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;5&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;mbvjkgip5&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Galaxy Earrings&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;23&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;vbb124btr&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Game Controller&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Electronics&lt;/td&gt;<br/>
+             &lt;td class=""&gt;2&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr tabindex="0" class="p-selectable-row"&gt;<br/>
+             &lt;td class=""&gt;cm230f032&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Gaming Set&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Electronics&lt;/td&gt;<br/>
+             &lt;td class=""&gt;63&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+           &lt;/tbody&gt;<br/>
+          &lt;/table&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="card"&gt;<br/>
+        &lt;h5&gt;RadioButton&lt;/h5&gt;<br/>
+        &lt;p&gt;Single selection can also be handled using radio buttons by enabling the selectionMode property of column as "single".&lt;/p&gt;<br/>
+        &lt;div class="p-datatable p-component" data-scrollselectors=".p-datatable-scrollable-body, .p-datatable-unfrozen-view .p-datatable-scrollable-body"&gt;<br/>
+         &lt;div class="p-datatable-wrapper"&gt;<br/>
+          &lt;table role="grid"&gt;<br/>
+           &lt;thead class="p-datatable-thead"&gt;<br/>
+            &lt;tr&gt;<br/>
+             &lt;th class="p-selection-column" style="width: 3em;"&gt;&lt;span class="p-column-title"&gt;&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Code&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Name&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Category&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Quantity&lt;/span&gt;&lt;/th&gt;<br/>
+            &lt;/tr&gt;<br/>
+           &lt;/thead&gt;<br/>
+           &lt;tbody class="p-datatable-tbody"&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-radiobutton p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="radio"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-radiobutton-box p-component p-clickable" role="radio" aria-checked="false"&gt;<br/>
+                &lt;div class="p-radiobutton-icon p-clickable"&gt;&lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;f230fh0g3&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Bamboo Watch&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;24&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-radiobutton p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="radio"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-radiobutton-box p-component p-clickable" role="radio" aria-checked="false"&gt;<br/>
+                &lt;div class="p-radiobutton-icon p-clickable"&gt;&lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;nvklal433&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Black Watch&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;61&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-radiobutton p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="radio"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-radiobutton-box p-component p-clickable" role="radio" aria-checked="false"&gt;<br/>
+                &lt;div class="p-radiobutton-icon p-clickable"&gt;&lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;zz21cz3c1&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Blue Band&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Fitness&lt;/td&gt;<br/>
+             &lt;td class=""&gt;2&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-radiobutton p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="radio"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-radiobutton-box p-component p-clickable" role="radio" aria-checked="false"&gt;<br/>
+                &lt;div class="p-radiobutton-icon p-clickable"&gt;&lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;244wgerg2&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Blue T-Shirt&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Clothing&lt;/td&gt;<br/>
+             &lt;td class=""&gt;25&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-radiobutton p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="radio"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-radiobutton-box p-component p-clickable" role="radio" aria-checked="false"&gt;<br/>
+                &lt;div class="p-radiobutton-icon p-clickable"&gt;&lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;h456wer53&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Bracelet&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;73&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-radiobutton p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="radio"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-radiobutton-box p-component p-clickable" role="radio" aria-checked="false"&gt;<br/>
+                &lt;div class="p-radiobutton-icon p-clickable"&gt;&lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;av2231fwg&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Brown Purse&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;0&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-radiobutton p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="radio"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-radiobutton-box p-component p-clickable" role="radio" aria-checked="false"&gt;<br/>
+                &lt;div class="p-radiobutton-icon p-clickable"&gt;&lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;bib36pfvm&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Chakra Bracelet&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;5&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-radiobutton p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="radio"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-radiobutton-box p-component p-clickable" role="radio" aria-checked="false"&gt;<br/>
+                &lt;div class="p-radiobutton-icon p-clickable"&gt;&lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;mbvjkgip5&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Galaxy Earrings&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;23&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-radiobutton p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="radio"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-radiobutton-box p-component p-clickable" role="radio" aria-checked="false"&gt;<br/>
+                &lt;div class="p-radiobutton-icon p-clickable"&gt;&lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;vbb124btr&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Game Controller&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Electronics&lt;/td&gt;<br/>
+             &lt;td class=""&gt;2&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-radiobutton p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="radio"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-radiobutton-box p-component p-clickable" role="radio" aria-checked="false"&gt;<br/>
+                &lt;div class="p-radiobutton-icon p-clickable"&gt;&lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;cm230f032&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Gaming Set&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Electronics&lt;/td&gt;<br/>
+             &lt;td class=""&gt;63&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+           &lt;/tbody&gt;<br/>
+          &lt;/table&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="card"&gt;<br/>
+        &lt;h5&gt;Checkbox&lt;/h5&gt;<br/>
+        &lt;div class="p-datatable p-component" data-scrollselectors=".p-datatable-scrollable-body, .p-datatable-unfrozen-view .p-datatable-scrollable-body"&gt;<br/>
+         &lt;div class="p-datatable-wrapper"&gt;<br/>
+          &lt;table role="grid"&gt;<br/>
+           &lt;thead class="p-datatable-thead"&gt;<br/>
+            &lt;tr&gt;<br/>
+             &lt;th class="p-selection-column" style="width: 3em;"&gt;&lt;span class="p-column-title"&gt;&lt;/span&gt;<br/>
+              &lt;div class="p-checkbox p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="checkbox" aria-checked="false"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-checkbox-box p-component p-clickable" role="checkbox" aria-checked="false"&gt;<br/>
+                &lt;span class="p-checkbox-icon p-clickable"&gt;&lt;/span&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Code&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Name&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Category&lt;/span&gt;&lt;/th&gt;<br/>
+             &lt;th class=""&gt;&lt;span class="p-column-title"&gt;Quantity&lt;/span&gt;&lt;/th&gt;<br/>
+            &lt;/tr&gt;<br/>
+           &lt;/thead&gt;<br/>
+           &lt;tbody class="p-datatable-tbody"&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-checkbox p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="checkbox" aria-checked="false"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-checkbox-box p-component p-clickable" role="checkbox" aria-checked="false"&gt;<br/>
+                &lt;span class="p-checkbox-icon p-clickable"&gt;&lt;/span&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;f230fh0g3&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Bamboo Watch&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;24&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-checkbox p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="checkbox" aria-checked="false"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-checkbox-box p-component p-clickable" role="checkbox" aria-checked="false"&gt;<br/>
+                &lt;span class="p-checkbox-icon p-clickable"&gt;&lt;/span&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;nvklal433&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Black Watch&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;61&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-checkbox p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="checkbox" aria-checked="false"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-checkbox-box p-component p-clickable" role="checkbox" aria-checked="false"&gt;<br/>
+                &lt;span class="p-checkbox-icon p-clickable"&gt;&lt;/span&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;zz21cz3c1&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Blue Band&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Fitness&lt;/td&gt;<br/>
+             &lt;td class=""&gt;2&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-checkbox p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="checkbox" aria-checked="false"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-checkbox-box p-component p-clickable" role="checkbox" aria-checked="false"&gt;<br/>
+                &lt;span class="p-checkbox-icon p-clickable"&gt;&lt;/span&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;244wgerg2&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Blue T-Shirt&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Clothing&lt;/td&gt;<br/>
+             &lt;td class=""&gt;25&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-checkbox p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="checkbox" aria-checked="false"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-checkbox-box p-component p-clickable" role="checkbox" aria-checked="false"&gt;<br/>
+                &lt;span class="p-checkbox-icon p-clickable"&gt;&lt;/span&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;h456wer53&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Bracelet&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;73&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-checkbox p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="checkbox" aria-checked="false"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-checkbox-box p-component p-clickable" role="checkbox" aria-checked="false"&gt;<br/>
+                &lt;span class="p-checkbox-icon p-clickable"&gt;&lt;/span&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;av2231fwg&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Brown Purse&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;0&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-checkbox p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="checkbox" aria-checked="false"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-checkbox-box p-component p-clickable" role="checkbox" aria-checked="false"&gt;<br/>
+                &lt;span class="p-checkbox-icon p-clickable"&gt;&lt;/span&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;bib36pfvm&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Chakra Bracelet&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;5&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-checkbox p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="checkbox" aria-checked="false"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-checkbox-box p-component p-clickable" role="checkbox" aria-checked="false"&gt;<br/>
+                &lt;span class="p-checkbox-icon p-clickable"&gt;&lt;/span&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;mbvjkgip5&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Galaxy Earrings&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Accessories&lt;/td&gt;<br/>
+             &lt;td class=""&gt;23&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr class=""&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-checkbox p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="checkbox" aria-checked="false"&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-checkbox-box p-component p-clickable" role="checkbox" aria-checked="false"&gt;<br/>
+                &lt;span class="p-checkbox-icon p-clickable"&gt;&lt;/span&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;vbb124btr&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Game Controller&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Electronics&lt;/td&gt;<br/>
+             &lt;td class=""&gt;2&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+            &lt;tr class="p-highlight" draggable="false"&gt;<br/>
+             &lt;td class="p-selection-column"&gt;<br/>
+              &lt;div class="p-checkbox p-component"&gt;<br/>
+               &lt;div class="p-hidden-accessible"&gt;<br/>
+                &lt;input type="checkbox" aria-checked="true" checked&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="p-checkbox-box p-component p-clickable p-highlight" role="checkbox" aria-checked="true"&gt;<br/>
+                &lt;span class="p-checkbox-icon p-clickable pi pi-check"&gt;&lt;/span&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;/td&gt;<br/>
+             &lt;td class=""&gt;cm230f032&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Gaming Set&lt;/td&gt;<br/>
+             &lt;td class=""&gt;Electronics&lt;/td&gt;<br/>
+             &lt;td class=""&gt;63&lt;/td&gt;<br/>
+            &lt;/tr&gt;<br/>
+           &lt;/tbody&gt;<br/>
+          &lt;/table&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="content-section documentation"&gt;<br/>
+       &lt;div class="p-tabview p-component"&gt;<br/>
+        &lt;ul class="p-tabview-nav" role="tablist"&gt;<br/>
+         &lt;li class="p-unselectable-text p-tabview-selected p-highlight" role="presentation"&gt;&lt;a role="tab" class="p-tabview-nav-link" id="pr_id_1_header_0" aria-controls="pr_id_1_content_0" aria-selected="true" tabindex="0"&gt;&lt;span class="p-tabview-title"&gt;Source&lt;/span&gt;&lt;span class="p-ink"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li class="p-tabview-ink-bar" style="width: 75px; left: 0px;"&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+        &lt;div class="p-tabview-panels"&gt;<br/>
+         &lt;div id="pr_id_1_content_0" aria-labelledby="pr_id_1_header_0" aria-hidden="false" class="p-tabview-panel" role="tabpanel"&gt;<br/>
+          &lt;div class="p-d-flex p-jc-end" style="margin-top: -1rem;"&gt;<br/>
+           &lt;div id="pr_id_2" class="p-splitbutton p-component liveEditorSplitButton"&gt;<br/>
+            &lt;button type="button" class="p-button p-component p-splitbutton-defaultbutton"&gt;&lt;span class="p-button-label p-c"&gt;&nbsp;&lt;/span&gt;<br/>
+             &lt;svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 24 24" fill="none" stroke="var(--primary-color-text)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-codesandbox"&gt;<br/>
+              &lt;path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"&gt;&lt;/path&gt;&lt;polyline points="7.5 4.21 12 6.81 16.5 4.21"&gt;&lt;/polyline&gt;&lt;polyline points="7.5 19.79 7.5 14.6 3 12"&gt;&lt;/polyline&gt;&lt;polyline points="21 12 16.5 14.6 16.5 19.79"&gt;&lt;/polyline&gt;&lt;polyline points="3.27 6.96 12 12.01 20.73 6.96"&gt;&lt;/polyline&gt;&lt;line x1="12" y1="22.08" x2="12" y2="12"&gt;&lt;/line&gt;<br/>
+             &lt;/svg&gt;&lt;span class="p-ml-2"&gt;Edit in CodeSandbox&lt;/span&gt;&lt;span class="p-ink"&gt;&lt;/span&gt;&lt;/button&gt;&lt;button type="button" class="p-button p-component p-splitbutton-menubutton p-button-icon-only" aria-expanded="false" aria-haspopup="true" aria-owns="pr_id_2_overlay"&gt;&lt;span class="pi pi-chevron-down p-c"&gt;&lt;/span&gt;&lt;span class="p-button-label p-c"&gt;&nbsp;&lt;/span&gt;&lt;span class="p-ink"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;pre class="  language-js"&gt;&lt;code class="  language-js"&gt;<br/>
+&lt;span class="token keyword"&gt;import&lt;/span&gt; React&lt;span class="token punctuation"&gt;,&lt;/span&gt; &lt;span class="token punctuation"&gt;{&lt;/span&gt; Component &lt;span class="token punctuation"&gt;}&lt;/span&gt; &lt;span class="token keyword"&gt;from&lt;/span&gt; &lt;span class="token string"&gt;'react'&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;<br/>
+&lt;span class="token keyword"&gt;import&lt;/span&gt; &lt;span class="token punctuation"&gt;{&lt;/span&gt; DataTable &lt;span class="token punctuation"&gt;}&lt;/span&gt; &lt;span class="token keyword"&gt;from&lt;/span&gt; &lt;span class="token string"&gt;'primereact/datatable'&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;<br/>
+&lt;span class="token keyword"&gt;import&lt;/span&gt; &lt;span class="token punctuation"&gt;{&lt;/span&gt; Column &lt;span class="token punctuation"&gt;}&lt;/span&gt; &lt;span class="token keyword"&gt;from&lt;/span&gt; &lt;span class="token string"&gt;'primereact/column'&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;<br/>
+&lt;span class="token keyword"&gt;import&lt;/span&gt; ProductService &lt;span class="token keyword"&gt;from&lt;/span&gt; &lt;span class="token string"&gt;'../service/ProductService'&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;<br/>
+&lt;span class="token keyword"&gt;import&lt;/span&gt; &lt;span class="token punctuation"&gt;{&lt;/span&gt; Toast &lt;span class="token punctuation"&gt;}&lt;/span&gt; &lt;span class="token keyword"&gt;from&lt;/span&gt; &lt;span class="token string"&gt;'primereact/toast'&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;<br/>
+<br/>
+&lt;span class="token keyword"&gt;export&lt;/span&gt; &lt;span class="token keyword"&gt;class&lt;/span&gt; &lt;span class="token class-name"&gt;DataTableSelectionDemo&lt;/span&gt; &lt;span class="token keyword"&gt;extends&lt;/span&gt; &lt;span class="token class-name"&gt;Component&lt;/span&gt; &lt;span class="token punctuation"&gt;{&lt;/span&gt;<br/>
+<br/>
+    &lt;span class="token function"&gt;constructor&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token parameter"&gt;props&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt; &lt;span class="token punctuation"&gt;{&lt;/span&gt;<br/>
+        &lt;span class="token keyword"&gt;super&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;props&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;<br/>
+<br/>
+        &lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;state &lt;span class="token operator"&gt;=&lt;/span&gt; &lt;span class="token punctuation"&gt;{&lt;/span&gt;<br/>
+            products&lt;span class="token operator"&gt;:&lt;/span&gt; &lt;span class="token punctuation"&gt;[&lt;/span&gt;&lt;span class="token punctuation"&gt;]&lt;/span&gt;&lt;span class="token punctuation"&gt;,&lt;/span&gt;<br/>
+            selectedProduct1&lt;span class="token operator"&gt;:&lt;/span&gt; &lt;span class="token keyword"&gt;null&lt;/span&gt;&lt;span class="token punctuation"&gt;,&lt;/span&gt;<br/>
+            selectedProduct2&lt;span class="token operator"&gt;:&lt;/span&gt; &lt;span class="token keyword"&gt;null&lt;/span&gt;&lt;span class="token punctuation"&gt;,&lt;/span&gt;<br/>
+            selectedProduct3&lt;span class="token operator"&gt;:&lt;/span&gt; &lt;span class="token keyword"&gt;null&lt;/span&gt;&lt;span class="token punctuation"&gt;,&lt;/span&gt;<br/>
+            selectedProducts1&lt;span class="token operator"&gt;:&lt;/span&gt; &lt;span class="token keyword"&gt;null&lt;/span&gt;&lt;span class="token punctuation"&gt;,&lt;/span&gt;<br/>
+            selectedProducts2&lt;span class="token operator"&gt;:&lt;/span&gt; &lt;span class="token keyword"&gt;null&lt;/span&gt;&lt;span class="token punctuation"&gt;,&lt;/span&gt;<br/>
+            selectedProducts3&lt;span class="token operator"&gt;:&lt;/span&gt; &lt;span class="token keyword"&gt;null&lt;/span&gt;<br/>
+        &lt;span class="token punctuation"&gt;}&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;<br/>
+<br/>
+        &lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;productService &lt;span class="token operator"&gt;=&lt;/span&gt; &lt;span class="token keyword"&gt;new&lt;/span&gt; &lt;span class="token class-name"&gt;ProductService&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;<br/>
+        &lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;onRowSelect &lt;span class="token operator"&gt;=&lt;/span&gt; &lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;onRowSelect&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;bind&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;<br/>
+        &lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;onRowUnselect &lt;span class="token operator"&gt;=&lt;/span&gt; &lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;onRowUnselect&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;bind&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;<br/>
+    &lt;span class="token punctuation"&gt;}&lt;/span&gt;<br/>
+<br/>
+    &lt;span class="token function"&gt;componentDidMount&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt; &lt;span class="token punctuation"&gt;{&lt;/span&gt;<br/>
+        &lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;productService&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;getProductsSmall&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;then&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token parameter"&gt;data&lt;/span&gt; &lt;span class="token operator"&gt;=&gt;&lt;/span&gt; &lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;setState&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt; products&lt;span class="token operator"&gt;:&lt;/span&gt; data &lt;span class="token punctuation"&gt;}&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;<br/>
+    &lt;span class="token punctuation"&gt;}&lt;/span&gt;<br/>
+<br/>
+    &lt;span class="token function"&gt;onRowSelect&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token parameter"&gt;event&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt; &lt;span class="token punctuation"&gt;{&lt;/span&gt;<br/>
+        &lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;toast&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;show&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt; severity&lt;span class="token operator"&gt;:&lt;/span&gt; &lt;span class="token string"&gt;'info'&lt;/span&gt;&lt;span class="token punctuation"&gt;,&lt;/span&gt; summary&lt;span class="token operator"&gt;:&lt;/span&gt; &lt;span class="token string"&gt;'Product Selected'&lt;/span&gt;&lt;span class="token punctuation"&gt;,&lt;/span&gt; detail&lt;span class="token operator"&gt;:&lt;/span&gt; &lt;span class="token string"&gt;'Name: '&lt;/span&gt; &lt;span class="token operator"&gt;+&lt;/span&gt; event&lt;span class="token punctuation"&gt;.&lt;/span&gt;data&lt;span class="token punctuation"&gt;.&lt;/span&gt;name&lt;span class="token punctuation"&gt;,&lt;/span&gt; life&lt;span class="token operator"&gt;:&lt;/span&gt; &lt;span class="token number"&gt;3000&lt;/span&gt; &lt;span class="token punctuation"&gt;}&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;<br/>
+    &lt;span class="token punctuation"&gt;}&lt;/span&gt;<br/>
+<br/>
+    &lt;span class="token function"&gt;onRowUnselect&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token parameter"&gt;event&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt; &lt;span class="token punctuation"&gt;{&lt;/span&gt;<br/>
+        &lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;toast&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;show&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt; severity&lt;span class="token operator"&gt;:&lt;/span&gt; &lt;span class="token string"&gt;'warn'&lt;/span&gt;&lt;span class="token punctuation"&gt;,&lt;/span&gt; summary&lt;span class="token operator"&gt;:&lt;/span&gt; &lt;span class="token string"&gt;'Product Unselected'&lt;/span&gt;&lt;span class="token punctuation"&gt;,&lt;/span&gt; detail&lt;span class="token operator"&gt;:&lt;/span&gt; &lt;span class="token string"&gt;'Name: '&lt;/span&gt; &lt;span class="token operator"&gt;+&lt;/span&gt; event&lt;span class="token punctuation"&gt;.&lt;/span&gt;data&lt;span class="token punctuation"&gt;.&lt;/span&gt;name&lt;span class="token punctuation"&gt;,&lt;/span&gt; life&lt;span class="token operator"&gt;:&lt;/span&gt; &lt;span class="token number"&gt;3000&lt;/span&gt; &lt;span class="token punctuation"&gt;}&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;<br/>
+    &lt;span class="token punctuation"&gt;}&lt;/span&gt;<br/>
+<br/>
+    &lt;span class="token function"&gt;render&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt; &lt;span class="token punctuation"&gt;{&lt;/span&gt;<br/>
+        &lt;span class="token keyword"&gt;return&lt;/span&gt; &lt;span class="token punctuation"&gt;(&lt;/span&gt;<br/>
+            &lt;span class="token operator"&gt;&lt;&lt;/span&gt;div&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Toast ref&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token parameter"&gt;el&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt; &lt;span class="token operator"&gt;=&gt;&lt;/span&gt; &lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;toast &lt;span class="token operator"&gt;=&lt;/span&gt; el&lt;span class="token punctuation"&gt;}&lt;/span&gt; &lt;span class="token operator"&gt;/&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+<br/>
+                &lt;span class="token operator"&gt;&lt;&lt;/span&gt;div className&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"card"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;h5&lt;span class="token operator"&gt;&gt;&lt;/span&gt;Single&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;h5&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;p&lt;span class="token operator"&gt;&gt;&lt;/span&gt;In single mode&lt;span class="token punctuation"&gt;,&lt;/span&gt; a row is selected on click event &lt;span class="token keyword"&gt;of&lt;/span&gt; a row&lt;span class="token punctuation"&gt;.&lt;/span&gt; If the row is already selected then the row gets unselected&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;p&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;DataTable value&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;state&lt;span class="token punctuation"&gt;.&lt;/span&gt;products&lt;span class="token punctuation"&gt;}&lt;/span&gt; selection&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;state&lt;span class="token punctuation"&gt;.&lt;/span&gt;selectedProduct1&lt;span class="token punctuation"&gt;}&lt;/span&gt; onSelectionChange&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token parameter"&gt;e&lt;/span&gt; &lt;span class="token operator"&gt;=&gt;&lt;/span&gt; &lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;setState&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt; selectedProduct1&lt;span class="token operator"&gt;:&lt;/span&gt; e&lt;span class="token punctuation"&gt;.&lt;/span&gt;value &lt;span class="token punctuation"&gt;}&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;}&lt;/span&gt; selectionMode&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"single"&lt;/span&gt; dataKey&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"id"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"code"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Code"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"name"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Name"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"category"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Category"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"quantity"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Quantity"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;DataTable&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                &lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;div&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+<br/>
+                &lt;span class="token operator"&gt;&lt;&lt;/span&gt;div className&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"card"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;h5&lt;span class="token operator"&gt;&gt;&lt;/span&gt;Multiple&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;h5&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;p&lt;span class="token operator"&gt;&gt;&lt;/span&gt;In multiple mode&lt;span class="token punctuation"&gt;,&lt;/span&gt; selection binding should be an array&lt;span class="token punctuation"&gt;.&lt;/span&gt; For touch enabled devices&lt;span class="token punctuation"&gt;,&lt;/span&gt; selection is managed by tapping and &lt;span class="token keyword"&gt;for&lt;/span&gt; other devices metakey or shiftkey are required&lt;span class="token punctuation"&gt;.&lt;/span&gt;<br/>
+                    Setting metaKeySelection property &lt;span class="token keyword"&gt;as&lt;/span&gt; &lt;span class="token boolean"&gt;false&lt;/span&gt; enables multiple selection without meta key&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;p&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;DataTable value&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;state&lt;span class="token punctuation"&gt;.&lt;/span&gt;products&lt;span class="token punctuation"&gt;}&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Multiple Selection with MetaKey"&lt;/span&gt; selection&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;state&lt;span class="token punctuation"&gt;.&lt;/span&gt;selectedProducts1&lt;span class="token punctuation"&gt;}&lt;/span&gt; onSelectionChange&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token parameter"&gt;e&lt;/span&gt; &lt;span class="token operator"&gt;=&gt;&lt;/span&gt; &lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;setState&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt; selectedProducts1&lt;span class="token operator"&gt;:&lt;/span&gt; e&lt;span class="token punctuation"&gt;.&lt;/span&gt;value &lt;span class="token punctuation"&gt;}&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;}&lt;/span&gt; selectionMode&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"multiple"&lt;/span&gt; dataKey&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"id"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"code"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Code"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"name"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Name"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"category"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Category"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"quantity"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Quantity"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;DataTable&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;DataTable value&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;state&lt;span class="token punctuation"&gt;.&lt;/span&gt;products&lt;span class="token punctuation"&gt;}&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Multiple Selection without MetaKey"&lt;/span&gt; selection&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;state&lt;span class="token punctuation"&gt;.&lt;/span&gt;selectedProducts2&lt;span class="token punctuation"&gt;}&lt;/span&gt; onSelectionChange&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token parameter"&gt;e&lt;/span&gt; &lt;span class="token operator"&gt;=&gt;&lt;/span&gt; &lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;setState&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt; selectedProducts2&lt;span class="token operator"&gt;:&lt;/span&gt; e&lt;span class="token punctuation"&gt;.&lt;/span&gt;value &lt;span class="token punctuation"&gt;}&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;}&lt;/span&gt; selectionMode&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"multiple"&lt;/span&gt; dataKey&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"id"&lt;/span&gt; metaKeySelection&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token boolean"&gt;false&lt;/span&gt;&lt;span class="token punctuation"&gt;}&lt;/span&gt; style&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt; marginTop&lt;span class="token operator"&gt;:&lt;/span&gt; &lt;span class="token string"&gt;'2em'&lt;/span&gt; &lt;span class="token punctuation"&gt;}&lt;/span&gt;&lt;span class="token punctuation"&gt;}&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"code"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Code"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"name"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Name"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"category"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Category"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"quantity"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Quantity"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;DataTable&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                &lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;div&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+<br/>
+                &lt;span class="token operator"&gt;&lt;&lt;/span&gt;div className&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"card"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;h5&lt;span class="token operator"&gt;&gt;&lt;/span&gt;Events&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;h5&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;p&lt;span class="token operator"&gt;&gt;&lt;/span&gt;row&lt;span class="token operator"&gt;-&lt;/span&gt;select and row&lt;span class="token operator"&gt;-&lt;/span&gt;unselects are available &lt;span class="token keyword"&gt;as&lt;/span&gt; selection events&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;p&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;DataTable value&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;state&lt;span class="token punctuation"&gt;.&lt;/span&gt;products&lt;span class="token punctuation"&gt;}&lt;/span&gt; selection&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;state&lt;span class="token punctuation"&gt;.&lt;/span&gt;selectedProduct2&lt;span class="token punctuation"&gt;}&lt;/span&gt; onSelectionChange&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token parameter"&gt;e&lt;/span&gt; &lt;span class="token operator"&gt;=&gt;&lt;/span&gt; &lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;setState&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt; selectedProduct2&lt;span class="token operator"&gt;:&lt;/span&gt; e&lt;span class="token punctuation"&gt;.&lt;/span&gt;value &lt;span class="token punctuation"&gt;}&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;}&lt;/span&gt; selectionMode&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"single"&lt;/span&gt; dataKey&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"id"&lt;/span&gt;<br/>
+                        onRowSelect&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;onRowSelect&lt;span class="token punctuation"&gt;}&lt;/span&gt; onRowUnselect&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;onRowUnselect&lt;span class="token punctuation"&gt;}&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"code"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Code"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"name"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Name"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"category"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Category"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"quantity"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Quantity"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;DataTable&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                &lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;div&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+<br/>
+                &lt;span class="token operator"&gt;&lt;&lt;/span&gt;div className&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"card"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;h5&lt;span class="token operator"&gt;&gt;&lt;/span&gt;RadioButton&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;h5&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;p&lt;span class="token operator"&gt;&gt;&lt;/span&gt;Single selection can also be handled using radio buttons by enabling the selectionMode property &lt;span class="token keyword"&gt;of&lt;/span&gt; column &lt;span class="token keyword"&gt;as&lt;/span&gt; &lt;span class="token string"&gt;"single"&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;p&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;DataTable value&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;state&lt;span class="token punctuation"&gt;.&lt;/span&gt;products&lt;span class="token punctuation"&gt;}&lt;/span&gt; selection&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;state&lt;span class="token punctuation"&gt;.&lt;/span&gt;selectedProduct3&lt;span class="token punctuation"&gt;}&lt;/span&gt; onSelectionChange&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token parameter"&gt;e&lt;/span&gt; &lt;span class="token operator"&gt;=&gt;&lt;/span&gt; &lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;setState&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt; selectedProduct3&lt;span class="token operator"&gt;:&lt;/span&gt; e&lt;span class="token punctuation"&gt;.&lt;/span&gt;value &lt;span class="token punctuation"&gt;}&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;}&lt;/span&gt; dataKey&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"id"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column selectionMode&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"single"&lt;/span&gt; headerStyle&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;width&lt;span class="token operator"&gt;:&lt;/span&gt; &lt;span class="token string"&gt;'3em'&lt;/span&gt;&lt;span class="token punctuation"&gt;}&lt;/span&gt;&lt;span class="token punctuation"&gt;}&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"code"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Code"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"name"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Name"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"category"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Category"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"quantity"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Quantity"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;DataTable&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                &lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;div&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+<br/>
+                &lt;span class="token operator"&gt;&lt;&lt;/span&gt;div className&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"card"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;h5&lt;span class="token operator"&gt;&gt;&lt;/span&gt;Checkbox&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;h5&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;DataTable value&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;state&lt;span class="token punctuation"&gt;.&lt;/span&gt;products&lt;span class="token punctuation"&gt;}&lt;/span&gt; selection&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;state&lt;span class="token punctuation"&gt;.&lt;/span&gt;selectedProducts3&lt;span class="token punctuation"&gt;}&lt;/span&gt; onSelectionChange&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token parameter"&gt;e&lt;/span&gt; &lt;span class="token operator"&gt;=&gt;&lt;/span&gt; &lt;span class="token keyword"&gt;this&lt;/span&gt;&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;setState&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt; selectedProducts3&lt;span class="token operator"&gt;:&lt;/span&gt; e&lt;span class="token punctuation"&gt;.&lt;/span&gt;value &lt;span class="token punctuation"&gt;}&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;}&lt;/span&gt; dataKey&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"id"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column selectionMode&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"multiple"&lt;/span&gt; headerStyle&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;&lt;span class="token punctuation"&gt;{&lt;/span&gt;width&lt;span class="token operator"&gt;:&lt;/span&gt; &lt;span class="token string"&gt;'3em'&lt;/span&gt;&lt;span class="token punctuation"&gt;}&lt;/span&gt;&lt;span class="token punctuation"&gt;}&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"code"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Code"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"name"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Name"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"category"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Category"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                        &lt;span class="token operator"&gt;&lt;&lt;/span&gt;Column field&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"quantity"&lt;/span&gt; header&lt;span class="token operator"&gt;=&lt;/span&gt;&lt;span class="token string"&gt;"Quantity"&lt;/span&gt;&lt;span class="token operator"&gt;&gt;&lt;/span&gt;&lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;Column&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                    &lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;DataTable&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+                &lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;div&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+            &lt;span class="token operator"&gt;&lt;&lt;/span&gt;&lt;span class="token operator"&gt;/&lt;/span&gt;div&lt;span class="token operator"&gt;&gt;&lt;/span&gt;<br/>
+        &lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;<br/>
+    &lt;span class="token punctuation"&gt;}&lt;/span&gt;<br/>
+&lt;span class="token punctuation"&gt;}&lt;/span&gt;<br/>
+                 &lt;/code&gt;&lt;/pre&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="p-dialog-mask p-component-overlay p-dialog-center"&gt;&lt;/div&gt;<br/>
+     &lt;div class="layout-footer"&gt;<br/>
+      &lt;div class="layout-footer-left"&gt;<br/>
+       &lt;span&gt;PrimeReact 5.0.2 by &lt;/span&gt;&lt;a href="http://www.primetek.com.tr" target="_blank" rel="noopener noreferrer"&gt;PrimeTek&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="layout-footer-right"&gt;<br/>
+       &lt;a href="https://github.com/primefaces/primereact" class="p-mr-3"&gt;&lt;i class="pi pi-github"&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href="https://twitter.com/primereact"&gt;&lt;i class="pi pi-twitter"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="layout-config"&gt;<br/>
+     &lt;div class="layout-config-content-wrapper"&gt;<br/>
+      &lt;button class="layout-config-button p-link"&gt;&lt;i class="pi pi-cog"&gt;&lt;/i&gt;&lt;/button&gt;&lt;button class="layout-config-close p-link"&gt;&lt;i class="pi pi-times"&gt;&lt;/i&gt;&lt;/button&gt;<br/>
+      &lt;div class="layout-config-content"&gt;<br/>
+       &lt;div&gt;<br/>
+        &lt;h4&gt;Component Scale&lt;/h4&gt;<br/>
+        &lt;div class="config-scale"&gt;<br/>
+         &lt;button class="p-button p-component p-button-text p-button-icon-only"&gt;&lt;span class="pi pi-minus p-c"&gt;&lt;/span&gt;&lt;span class="p-button-label p-c"&gt;&nbsp;&lt;/span&gt;&lt;span class="p-ink"&gt;&lt;/span&gt;&lt;/button&gt;&lt;i class="pi pi-circle-on"&gt;&lt;/i&gt;&lt;i class="pi pi-circle-on"&gt;&lt;/i&gt;&lt;i class="pi pi-circle-on scale-active"&gt;&lt;/i&gt;&lt;i class="pi pi-circle-on"&gt;&lt;/i&gt;&lt;i class="pi pi-circle-on"&gt;&lt;/i&gt;&lt;button class="p-button p-component p-button-text p-button-icon-only"&gt;&lt;span class="pi pi-plus p-c"&gt;&lt;/span&gt;&lt;span class="p-button-label p-c"&gt;&nbsp;&lt;/span&gt;&lt;span class="p-ink"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="app-inputstyleswitch"&gt;<br/>
+         &lt;h4&gt;Input Style&lt;/h4&gt;<br/>
+         &lt;div class="p-formgroup-inline"&gt;<br/>
+          &lt;div class="p-field-radiobutton"&gt;<br/>
+           &lt;div class="p-radiobutton p-component p-radiobutton-checked"&gt;<br/>
+            &lt;div class="p-hidden-accessible"&gt;<br/>
+             &lt;input id="config_outlined" type="radio" name="inputstyle" checked&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="p-radiobutton-box p-highlight" role="radio" aria-checked="true"&gt;<br/>
+             &lt;div class="p-radiobutton-icon"&gt;&lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;&lt;label for="config_outlined"&gt;Outlined&lt;/label&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="p-field-radiobutton"&gt;<br/>
+           &lt;div class="p-radiobutton p-component"&gt;<br/>
+            &lt;div class="p-hidden-accessible"&gt;<br/>
+             &lt;input id="config_filled" type="radio" name="inputstyle"&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="p-radiobutton-box" role="radio" aria-checked="false"&gt;<br/>
+             &lt;div class="p-radiobutton-icon"&gt;&lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;&lt;label for="config_filled"&gt;Filled&lt;/label&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;h4&gt;Ripple Effect&lt;/h4&gt;<br/>
+        &lt;div class="p-inputswitch p-component p-inputswitch-checked" role="checkbox" aria-checked="true"&gt;<br/>
+         &lt;div class="p-hidden-accessible"&gt;<br/>
+          &lt;input type="checkbox" role="switch" aria-checked="true" checked&gt;<br/>
+         &lt;/div&gt;&lt;span class="p-inputswitch-slider"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;h4&gt;Free Themes&lt;/h4&gt;<br/>
+        &lt;p&gt;Built-in component themes created by the &lt;a href="https://www.primefaces.org/designer/primereact"&gt;PrimeReact Theme Designer&lt;/a&gt;.&lt;/p&gt;<br/>
+        &lt;h5&gt;Bootstrap&lt;/h5&gt;<br/>
+        &lt;div class="p-grid free-themes"&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/bootstrap4-light-blue.svg" alt="Bootstrap Light Blue"&gt;&lt;/button&gt;&lt;span&gt;Blue&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/bootstrap4-light-purple.svg" alt="Bootstrap Light Blue"&gt;&lt;/button&gt;&lt;span&gt;Purple&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/bootstrap4-dark-blue.svg" alt="Bootstrap Dark Blue"&gt;&lt;/button&gt;&lt;span&gt;Blue&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/bootstrap4-dark-purple.svg" alt="Bootstrap Dark Blue"&gt;&lt;/button&gt;&lt;span&gt;Purple&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;h5&gt;Material Design&lt;/h5&gt;<br/>
+        &lt;div class="p-grid free-themes"&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/md-light-indigo.svg" alt="Material Light Indigo"&gt;&lt;/button&gt;&lt;span&gt;Indigo&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/md-light-deeppurple.svg" alt="Material Light Deep Purple"&gt;&lt;/button&gt;&lt;span&gt;Deep Purple&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/md-dark-indigo.svg" alt="Material Dark Indigo"&gt;&lt;/button&gt;&lt;span&gt;Indigo&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/md-dark-deeppurple.svg" alt="Material Dark Deep Purple"&gt;&lt;/button&gt;&lt;span&gt;Deep Purple&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;h5&gt;Material Design Compact&lt;/h5&gt;<br/>
+        &lt;div class="p-grid free-themes"&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/md-light-indigo.svg" alt="Material Compact Light Indigo"&gt;&lt;/button&gt;&lt;span&gt;Indigo&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/md-light-deeppurple.svg" alt="Material Compact Deep Purple"&gt;&lt;/button&gt;&lt;span&gt;Deep Purple&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/md-dark-indigo.svg" alt="Material Compact Dark Indigo"&gt;&lt;/button&gt;&lt;span&gt;Indigo&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/md-dark-deeppurple.svg" alt="Material Compact Dark Deep Purple"&gt;&lt;/button&gt;&lt;span&gt;Deep Purple&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;h5&gt;Fluent UI&lt;/h5&gt;<br/>
+        &lt;div class="p-grid free-themes"&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/fluent-light.png" alt="Fluent Light"&gt;&lt;/button&gt;&lt;span&gt;Blue&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;h5&gt;PrimeOne Design&lt;/h5&gt;<br/>
+        &lt;div class="p-grid free-themes"&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/saga-blue.png" alt="Saga Blue"&gt;&lt;/button&gt;&lt;span&gt;Saga Blue&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/saga-green.png" alt="Saga Green"&gt;&lt;/button&gt;&lt;span&gt;Saga Green&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/saga-orange.png" alt="Saga Orange"&gt;&lt;/button&gt;&lt;span&gt;Saga Orange&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/saga-purple.png" alt="Saga Purple"&gt;&lt;/button&gt;&lt;span&gt;Saga Purple&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/vela-blue.png" alt="Vela Blue"&gt;&lt;/button&gt;&lt;span&gt;Vela Blue&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/vela-green.png" alt="Vela Green"&gt;&lt;/button&gt;&lt;span&gt;Vela Green&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/vela-orange.png" alt="Vela Orange"&gt;&lt;/button&gt;&lt;span&gt;Vela Orange&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/vela-purple.png" alt="Vela Purple"&gt;&lt;/button&gt;&lt;span&gt;Vela Purple&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/arya-blue.png" alt="Arya Blue"&gt;&lt;/button&gt;&lt;span&gt;Arya Blue&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/arya-green.png" alt="Arya Green"&gt;&lt;/button&gt;&lt;span&gt;Arya Green&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/arya-orange.png" alt="Arya Orange"&gt;&lt;/button&gt;&lt;span&gt;Arya Orange&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/arya-purple.png" alt="Arya Purple"&gt;&lt;/button&gt;&lt;span&gt;Arya Purple&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;h5&gt;Premium Themes&lt;/h5&gt;<br/>
+        &lt;p&gt;Premium themes are only available exclusively for &lt;a href="https://www.primefaces.org/designer/primereact"&gt;PrimeReact Theme Designer&lt;/a&gt; subscribers and therefore not included in PrimeReact core.&lt;/p&gt;<br/>
+        &lt;div class="p-grid free-themes"&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/soho-light.png" alt="Soho Light"&gt;&lt;/button&gt;&lt;span&gt;Soho Light&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/soho-dark.png" alt="Soho Dark"&gt;&lt;/button&gt;&lt;span&gt;Soho Dark&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/mira.jpg" alt="Mira"&gt;&lt;/button&gt;&lt;span&gt;Mira&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/nano.jpg" alt="Nano"&gt;&lt;/button&gt;&lt;span&gt;Nano&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;h4&gt;Legacy Free Themes&lt;/h4&gt;<br/>
+        &lt;div class="p-grid free-themes"&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/nova.png" alt="Nova"&gt;&lt;/button&gt;&lt;span&gt;Nova&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/nova-alt.png" alt="Nova Alt"&gt;&lt;/button&gt;&lt;span&gt;Nova Alt&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/nova-accent.png" alt="Nova Accent"&gt;&lt;/button&gt;&lt;span&gt;Nova Accent&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/luna-blue.png" alt="Luna Blue"&gt;&lt;/button&gt;&lt;span&gt;Luna Blue&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/luna-green.png" alt="Luna Green"&gt;&lt;/button&gt;&lt;span&gt;Luna Green&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/luna-amber.png" alt="Luna Amber"&gt;&lt;/button&gt;&lt;span&gt;Luna Amber&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/luna-pink.png" alt="Luna Pink"&gt;&lt;/button&gt;&lt;span&gt;Luna Pink&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-3"&gt;<br/>
+          &lt;button class="p-link"&gt;&lt;img src="showcase/images/themes/rhea.png" alt="Rhea"&gt;&lt;/button&gt;&lt;span&gt;Rhea&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;h4&gt;Premium Create-React-App Templates&lt;/h4&gt;<br/>
+        &lt;p&gt;Beautifully crafted premium &lt;a href="https://github.com/facebookincubator/create-react-app"&gt;create-react-app&lt;/a&gt; application templates by the PrimeTek design team.&lt;/p&gt;<br/>
+        &lt;div class="p-grid premium-themes"&gt;<br/>
+         &lt;div class="p-col-12 p-md-6"&gt;<br/>
+          &lt;a href="https://www.primefaces.org/layouts/diamond-react" rel="noopener noreferrer" target="_blank"&gt;&lt;img alt="Diamond" src="showcase/images/layouts/diamond-react.jpg"&gt;&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-12 p-md-6"&gt;<br/>
+          &lt;a href="https://www.primefaces.org/layouts/sapphire-react" rel="noopener noreferrer" target="_blank"&gt;&lt;img alt="Sapphire" src="showcase/images/layouts/sapphire-react.jpg"&gt;&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-12 p-md-6"&gt;<br/>
+          &lt;a href="https://www.primefaces.org/layouts/serenity-react" rel="noopener noreferrer" target="_blank"&gt;&lt;img alt="Serenity" src="showcase/images/layouts/serenity-react.jpg"&gt;&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-12 p-md-6"&gt;<br/>
+          &lt;a href="https://www.primefaces.org/layouts/ultima-react" rel="noopener noreferrer" target="_blank"&gt;&lt;img alt="Ultima" src="showcase/images/layouts/ultima-react.jpg"&gt;&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-12 p-md-6"&gt;<br/>
+          &lt;a href="https://www.primefaces.org/layouts/babylon-react" rel="noopener noreferrer" target="_blank"&gt;&lt;img alt="Babylon" src="showcase/images/layouts/babylon-react.jpg"&gt;&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-12 p-md-6"&gt;<br/>
+          &lt;a href="https://www.primefaces.org/layouts/avalon-react" rel="noopener noreferrer" target="_blank"&gt;&lt;img alt="Avalon" src="showcase/images/layouts/avalon-react.jpg"&gt;&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-12 p-md-6"&gt;<br/>
+          &lt;a href="https://www.primefaces.org/layouts/apollo-react" rel="noopener noreferrer" target="_blank"&gt;&lt;img alt="Apollo" src="showcase/images/layouts/apollo-react.jpg"&gt;&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="p-col-12 p-md-6"&gt;<br/>
+          &lt;a href="https://www.primefaces.org/layouts/roma-react" rel="noopener noreferrer" target="_blank"&gt;&lt;img alt="Roma" src="showcase/images/layouts/roma-react.jpg"&gt;&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="layout-mask"&gt;&lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;script&gt;!function(e){function r(r){for(var n,i,l=r[0],a=r[1],p=r[2],c=0,s=[];c&lt;l.length;c++)i=l[c],Object.prototype.hasOwnProperty.call(o,i)&&o[i]&&s.push(o[i][0]),o[i]=0;for(n in a)Object.prototype.hasOwnProperty.call(a,n)&&(e[n]=a[n]);for(f&&f(r);s.length;)s.shift()();return u.push.apply(u,p||[]),t()}function t(){for(var e,r=0;r&lt;u.length;r++){for(var t=u[r],n=!0,l=1;l&lt;t.length;l++){var a=t[l];0!==o[a]&&(n=!1)}n&&(u.splice(r--,1),e=i(i.s=t[0]))}return e}var n={},o={1:0},u=[];function i(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,i),t.l=!0,t.exports}i.m=e,i.c=n,i.d=function(e,r,t){i.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,r){if(1&r&&(e=i(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(i.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)i.d(t,n,function(r){return e[r]}.bind(null,n));return t},i.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(r,"a",r),r},i.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},i.p="./";var l=this.webpackJsonpprimereact=this.webpackJsonpprimereact||[],a=l.push.bind(l);l.push=r,l=l.slice();for(var p=0;p&lt;l.length;p++)r(l[p]);var f=a;t()}([])&lt;/script&gt;<br/>
+  &lt;script src="./static/js/2.2d8dc387.chunk.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="./static/js/main.fc523fc7.chunk.js"&gt;&lt;/script&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
